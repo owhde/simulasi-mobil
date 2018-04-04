@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simulasi Mobil</title>
+</head>
+<body style="background: #00f;">
+  <canvas id="canvas"></canvas>
+</body>
+</html>
+
+<script>
+var sun = new Image();
+var moon = new Image();
+var mobil = new Image();
+
+class Mobil {
+  init() {
+    this.v = this.min + (this.max - this.min) * Math.random();
+  }
+}
+
+class Lemot extends Mobil {
+  constructor() {
+    super();
+    this.min = 10;
+    this.max = 30;
+    this.init();
+  }
+}
+
+class Ngebut extends Mobil {
+  constructor() {
+    super();
+    this.min = 40;
+    this.max = 60;
+    this.init();
+  }
+}
+
+kuda = new Lemot();
+alert(kuda.v);
+
+
+function init() {
+  mobil.src = 'oren.png';
+  window.requestAnimationFrame(draw);
+}
+
+function draw() {
+  kecepatan = 40;
+  var canvas = document.getElementById('canvas');
+  var ctx = canvas.getContext('2d');
+  canvas.width = 1000;
+  canvas.height = 600;
+
+  ctx.globalCompositeOperation = 'destination-over';
+  ctx.clearRect(0, 0, canvas.width, canvas.height); // clear canvas
+
+  ctx.fillStyle = 'rgba(0, 0, 0, 1)';
+  ctx.strokeStyle = 'rgba(0, 153, 255, 0.4)';
+  ctx.save();
+
+  // Earth
+  var time = new Date();
+  // ctx.rotate(((2 * Math.PI) / 60) * time.getSeconds() + ((2 * Math.PI) / 60000) * time.getMilliseconds());
+  ctx.translate((time.getTime() / 5) % canvas.width, 100);
+  ctx.scale(0.15, 0.15);
+  ctx.drawImage(mobil, -12, -12);
+
+  ctx.restore();
+ 
+  ctx.fillRect(0, 0, canvas.width, canvas.height); // Blackground
+
+  window.requestAnimationFrame(draw);
+}
+
+init();
+</script>
