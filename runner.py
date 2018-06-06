@@ -36,29 +36,28 @@ def generate_routefile():
     random.seed(42)  # make tests reproducible
     N = 900  # number of time steps
     # demand per second from different directions
-    pWE = 1. / 10
-    pEW = 1. / 11
-    pNS = 1. / 30
+    pWE = 1. / 25
     with open("data/cross.rou.xml", "w") as routes:
+        # Red, green, ungu, yellow, cyan
         print("""<routes>
-        <vType
-            id="typeWE"
-            accel="0.8"
-            decel="4.5"
-            sigma="0.5"
-            length="5"
-            minGap="2.5"
-            maxSpeed="5.67"
-            guiShape="passenger"/>
+        <vType id="type1" accel="0.8" decel="5.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="5.55" color="1,0,0" guiShape="passenger"/>
+        <vType id="type2" accel="0.9" decel="6.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="11.11" color="0,1,0" guiShape="passenger"/>
+        <vType id="type3" accel="1.1" decel="7.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="16.67" color="1,0,1" guiShape="passenger"/>
+        <vType id="type4" accel="1.2" decel="8.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="22.22" color="1,1,0" guiShape="passenger"/>
+        <vType id="type5" accel="1.4" decel="9.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="27.78" color="0,1,1" guiShape="passenger"/>
 
         <route id="right" edges="12 23 34" />""", file=routes)
         lastVeh = 0
         vehNr = 0
+        maxMobil = 100
         for i in range(N):
             if random.uniform(0, 1) < pWE:
-                print('    <vehicle id="right_%i" type="typeWE" route="right" depart="%i" />' % (
-                    vehNr, i), file=routes)
+                kelas = random.randint(1, 5)
+                print('    <vehicle id="right_%i" type="type%i" route="right" depart="%i" />' % (
+                    vehNr, kelas, i), file=routes)
                 vehNr += 1
+                if (vehNr >= maxMobil):
+                    break
                 lastVeh = i
 
         print("</routes>", file=routes)
