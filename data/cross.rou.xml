@@ -1,95 +1,55 @@
 <routes>
-        <vType
-            id="typeWE"
-            accel="0.8"
-            decel="4.5"
-            sigma="0.5"
-            length="5"
-            minGap="2.5"
-            maxSpeed="5.67"
-            guiShape="passenger"/>
+        <vType id="type1" accel="0.8" decel="6.5" sigma="0.5" length="8" minGap="2.5" maxSpeed="6" color="red" guiShape="passenger"/>
+        <vType id="type2" accel="0.9" decel="7.5" sigma="0.5" length="7" minGap="2.5" maxSpeed="11" color="green" guiShape="passenger"/>
+        <vType id="type3" accel="1.1" decel="6.5" sigma="0.5" length="6" minGap="2.5" maxSpeed="16" color="blue" guiShape="passenger"/>
+        <vType id="type4" accel="1.2" decel="5.5" sigma="0.5" length="6" minGap="2.5" maxSpeed="17" color="yellow" guiShape="passenger"/>
+        <vType id="type5" accel="1.4" decel="4.5" sigma="0.5" length="4" minGap="2.5" maxSpeed="18" color="orange" guiShape="passenger"/>
 
         <route id="right" edges="12 23 34" />
-    <vehicle id="right_0" type="typeWE" route="right" depart="1" />
-    <vehicle id="right_1" type="typeWE" route="right" depart="7" />
-    <vehicle id="right_2" type="typeWE" route="right" depart="9" />
-    <vehicle id="right_3" type="typeWE" route="right" depart="12" />
-    <vehicle id="right_4" type="typeWE" route="right" depart="19" />
-    <vehicle id="right_5" type="typeWE" route="right" depart="26" />
-    <vehicle id="right_6" type="typeWE" route="right" depart="27" />
-    <vehicle id="right_7" type="typeWE" route="right" depart="41" />
-    <vehicle id="right_8" type="typeWE" route="right" depart="44" />
-    <vehicle id="right_9" type="typeWE" route="right" depart="67" />
-    <vehicle id="right_10" type="typeWE" route="right" depart="88" />
-    <vehicle id="right_11" type="typeWE" route="right" depart="89" />
-    <vehicle id="right_12" type="typeWE" route="right" depart="94" />
-    <vehicle id="right_13" type="typeWE" route="right" depart="100" />
-    <vehicle id="right_14" type="typeWE" route="right" depart="124" />
-    <vehicle id="right_15" type="typeWE" route="right" depart="126" />
-    <vehicle id="right_16" type="typeWE" route="right" depart="131" />
-    <vehicle id="right_17" type="typeWE" route="right" depart="134" />
-    <vehicle id="right_18" type="typeWE" route="right" depart="136" />
-    <vehicle id="right_19" type="typeWE" route="right" depart="160" />
-    <vehicle id="right_20" type="typeWE" route="right" depart="165" />
-    <vehicle id="right_21" type="typeWE" route="right" depart="176" />
-    <vehicle id="right_22" type="typeWE" route="right" depart="183" />
-    <vehicle id="right_23" type="typeWE" route="right" depart="197" />
-    <vehicle id="right_24" type="typeWE" route="right" depart="207" />
-    <vehicle id="right_25" type="typeWE" route="right" depart="224" />
-    <vehicle id="right_26" type="typeWE" route="right" depart="230" />
-    <vehicle id="right_27" type="typeWE" route="right" depart="252" />
-    <vehicle id="right_28" type="typeWE" route="right" depart="256" />
-    <vehicle id="right_29" type="typeWE" route="right" depart="269" />
-    <vehicle id="right_30" type="typeWE" route="right" depart="287" />
-    <vehicle id="right_31" type="typeWE" route="right" depart="290" />
-    <vehicle id="right_32" type="typeWE" route="right" depart="297" />
-    <vehicle id="right_33" type="typeWE" route="right" depart="298" />
-    <vehicle id="right_34" type="typeWE" route="right" depart="324" />
-    <vehicle id="right_35" type="typeWE" route="right" depart="342" />
-    <vehicle id="right_36" type="typeWE" route="right" depart="368" />
-    <vehicle id="right_37" type="typeWE" route="right" depart="375" />
-    <vehicle id="right_38" type="typeWE" route="right" depart="394" />
-    <vehicle id="right_39" type="typeWE" route="right" depart="406" />
-    <vehicle id="right_40" type="typeWE" route="right" depart="415" />
-    <vehicle id="right_41" type="typeWE" route="right" depart="419" />
-    <vehicle id="right_42" type="typeWE" route="right" depart="427" />
-    <vehicle id="right_43" type="typeWE" route="right" depart="435" />
-    <vehicle id="right_44" type="typeWE" route="right" depart="460" />
-    <vehicle id="right_45" type="typeWE" route="right" depart="469" />
-    <vehicle id="right_46" type="typeWE" route="right" depart="481" />
-    <vehicle id="right_47" type="typeWE" route="right" depart="493" />
-    <vehicle id="right_48" type="typeWE" route="right" depart="501" />
-    <vehicle id="right_49" type="typeWE" route="right" depart="504" />
-    <vehicle id="right_50" type="typeWE" route="right" depart="508" />
-    <vehicle id="right_51" type="typeWE" route="right" depart="517" />
-    <vehicle id="right_52" type="typeWE" route="right" depart="518" />
-    <vehicle id="right_53" type="typeWE" route="right" depart="528" />
-    <vehicle id="right_54" type="typeWE" route="right" depart="543" />
-    <vehicle id="right_55" type="typeWE" route="right" depart="549" />
-    <vehicle id="right_56" type="typeWE" route="right" depart="583" />
-    <vehicle id="right_57" type="typeWE" route="right" depart="589" />
-    <vehicle id="right_58" type="typeWE" route="right" depart="598" />
-    <vehicle id="right_59" type="typeWE" route="right" depart="600" />
-    <vehicle id="right_60" type="typeWE" route="right" depart="608" />
-    <vehicle id="right_61" type="typeWE" route="right" depart="637" />
-    <vehicle id="right_62" type="typeWE" route="right" depart="651" />
-    <vehicle id="right_63" type="typeWE" route="right" depart="656" />
-    <vehicle id="right_64" type="typeWE" route="right" depart="658" />
-    <vehicle id="right_65" type="typeWE" route="right" depart="683" />
-    <vehicle id="right_66" type="typeWE" route="right" depart="684" />
-    <vehicle id="right_67" type="typeWE" route="right" depart="703" />
-    <vehicle id="right_68" type="typeWE" route="right" depart="715" />
-    <vehicle id="right_69" type="typeWE" route="right" depart="716" />
-    <vehicle id="right_70" type="typeWE" route="right" depart="720" />
-    <vehicle id="right_71" type="typeWE" route="right" depart="728" />
-    <vehicle id="right_72" type="typeWE" route="right" depart="737" />
-    <vehicle id="right_73" type="typeWE" route="right" depart="775" />
-    <vehicle id="right_74" type="typeWE" route="right" depart="817" />
-    <vehicle id="right_75" type="typeWE" route="right" depart="826" />
-    <vehicle id="right_76" type="typeWE" route="right" depart="851" />
-    <vehicle id="right_77" type="typeWE" route="right" depart="852" />
-    <vehicle id="right_78" type="typeWE" route="right" depart="858" />
-    <vehicle id="right_79" type="typeWE" route="right" depart="864" />
-    <vehicle id="right_80" type="typeWE" route="right" depart="873" />
-    <vehicle id="right_81" type="typeWE" route="right" depart="882" />
+<vehicle id="right_0" type="type3" route="right" depart="68" departLane="0" />
+<vehicle id="right_1" type="type3" route="right" depart="76" departLane="0" />
+<vehicle id="right_2" type="type3" route="right" depart="78" departLane="1" />
+<vehicle id="right_3" type="type3" route="right" depart="105" departLane="1" />
+<vehicle id="right_4" type="type5" route="right" depart="109" departLane="1" />
+<vehicle id="right_5" type="type2" route="right" depart="119" departLane="1" />
+<vehicle id="right_6" type="type1" route="right" depart="166" departLane="0" />
+<vehicle id="right_7" type="type4" route="right" depart="213" departLane="1" />
+<vehicle id="right_8" type="type4" route="right" depart="225" departLane="1" />
+<vehicle id="right_9" type="type3" route="right" depart="233" departLane="0" />
+<vehicle id="right_10" type="type4" route="right" depart="234" departLane="0" />
+<vehicle id="right_11" type="type2" route="right" depart="236" departLane="0" />
+<vehicle id="right_12" type="type4" route="right" depart="240" departLane="1" />
+<vehicle id="right_13" type="type2" route="right" depart="244" departLane="1" />
+<vehicle id="right_14" type="type2" route="right" depart="248" departLane="1" />
+<vehicle id="right_15" type="type2" route="right" depart="270" departLane="1" />
+<vehicle id="right_16" type="type3" route="right" depart="329" departLane="1" />
+<vehicle id="right_17" type="type5" route="right" depart="382" departLane="1" />
+<vehicle id="right_18" type="type3" route="right" depart="386" departLane="0" />
+<vehicle id="right_19" type="type2" route="right" depart="401" departLane="1" />
+<vehicle id="right_20" type="type5" route="right" depart="424" departLane="0" />
+<vehicle id="right_21" type="type4" route="right" depart="433" departLane="1" />
+<vehicle id="right_22" type="type1" route="right" depart="442" departLane="1" />
+<vehicle id="right_23" type="type2" route="right" depart="486" departLane="1" />
+<vehicle id="right_24" type="type5" route="right" depart="503" departLane="1" />
+<vehicle id="right_25" type="type2" route="right" depart="514" departLane="0" />
+<vehicle id="right_26" type="type5" route="right" depart="532" departLane="1" />
+<vehicle id="right_27" type="type5" route="right" depart="545" departLane="0" />
+<vehicle id="right_28" type="type4" route="right" depart="569" departLane="0" />
+<vehicle id="right_29" type="type4" route="right" depart="587" departLane="1" />
+<vehicle id="right_30" type="type4" route="right" depart="593" departLane="1" />
+<vehicle id="right_31" type="type5" route="right" depart="616" departLane="0" />
+<vehicle id="right_32" type="type2" route="right" depart="625" departLane="1" />
+<vehicle id="right_33" type="type3" route="right" depart="657" departLane="0" />
+<vehicle id="right_34" type="type4" route="right" depart="681" departLane="0" />
+<vehicle id="right_35" type="type4" route="right" depart="688" departLane="0" />
+<vehicle id="right_36" type="type1" route="right" depart="703" departLane="1" />
+<vehicle id="right_37" type="type5" route="right" depart="713" departLane="0" />
+<vehicle id="right_38" type="type5" route="right" depart="758" departLane="1" />
+<vehicle id="right_39" type="type3" route="right" depart="759" departLane="1" />
+<vehicle id="right_40" type="type5" route="right" depart="800" departLane="1" />
+<vehicle id="right_41" type="type2" route="right" depart="827" departLane="0" />
+<vehicle id="right_42" type="type3" route="right" depart="857" departLane="1" />
+<vehicle id="right_43" type="type2" route="right" depart="872" departLane="1" />
+<vehicle id="right_44" type="type5" route="right" depart="890" departLane="1" />
+<vehicle id="right_45" type="type3" route="right" depart="899" departLane="0" />
 </routes>
